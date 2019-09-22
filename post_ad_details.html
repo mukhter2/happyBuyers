@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icofont/icofont/icofont.min.css">
+    <title>post_ad_details</title>
+  </head>
+  <body  class="bgAd">
+
+<!------------Navbar--------------->
+ <nav class="navbar navbar-expand-lg navbar-light">
+ <div class="container">
+  <a class="navbar-brand" href="index.html"><img src="img/logo.png"><span class="logoText">HappyBuyers.com</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn"> সকল বিজ্ঞাপন </button>
+		  <div id="myDropdown" class="dropdown-content">
+			<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+			<a href="#about">About</a>
+			<a href="#base">Base</a>
+			<a href="#blog">Blog</a>
+			<a href="#contact">Contact</a>
+			<a href="#custom">Custom</a>
+			<a href="#support">Support</a>
+			<a href="#tools">Tools</a>
+		  </div>
+	</div>
+
+
+    </ul>
+    <ul class="navbar-nav ml-auto">
+    	<li class="nav-item mr-5">
+        	<a class="nav-link" href="#"><i class="fas fa-comment-alt text-white navIcon"></i><span class="text-white"> চ্যাট </span></a>
+      	</li>
+      	<li class="nav-item mr-5">
+          <div class="dropdown">
+          <button onclick="myFunction2()" class="dropbtn"> আমার অ্যাকাউন্ট  </button>
+          <div id="myDropdown2" class="dropdown-content">
+          <a href="#myaccount">আমার অ্যাকাউন্ট</a>
+          <a href="#myMembership">আমার সদস্যতা</a>
+          <a href="#myFavourite">আমার পছন্দ</a>
+          <a href="#mySettings">সেটিংস</a>
+          <a href="#finalLogout">লগআউট</a>
+
+          </div>
+      </div>
+      	</li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a href="post_ad.html" class="btn my-2 my-sm-0 btn-info"  role="button"> আপনার বিজ্ঞাপন
+  				 দিন  </a>
+    </form>
+  </div>
+  </div>
+</nav>
+
+<br>
+<br>
+<div class="container bg-white p-5">
+  <p class="font-3">আপনার জমি অথবা সম্পত্তি বিক্রয় করুনঃ</p>
+  <hr/>
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-9">
+          <p class="font-1"><i class="far fa-check-circle"></i> শ্রেনিঃ গ্রোসারিজ - ব্যক্তিগত </p>
+        </div>
+        <div class="col-sm-3">
+        <p>  <a href="#" style="color: #1da4b6"> পরিবর্তন </a></p>
+        </div>
+      </div>
+      <hr/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-9">
+          <p  class="font-1"><i class="far fa-check-circle"></i> অবস্থানঃ ঢাকা - মোহাম্মাদপুর</p>
+        </div>
+        <div class="col-sm-3">
+        <p>  <a href="#" style="color: #1da4b6"> পরিবর্তন </a></p>
+        </div>
+      </div>
+      <hr/>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+      <div class="col-sm-7 ">
+        <p class="font-4">ছবি যোগ করুন</p>
+        <p class="outliner"><i class="icofont-image icofont-5x outliner-img"></i> <button class="btn btn-lg my-2 my-sm-0 btn-info float-right" type="submit"> একটি ছবি যোগ করুন  </button> </p>
+      </div>
+  </div>
+  <br/>
+    <p class="font-4">বিস্তারিত তথ্য দিন</p>
+
+
+    <div class="form-group">
+      <div class="row">
+      <div class="col-sm-7 picker">
+        <input type="text" class="form-control form-control-lg" id="inputBed" placeholder="পণ্যের নাম">
+      </div>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <div class="row">
+      <div class="col-sm-7 picker">
+        <input type="text" class="form-control form-control-lg" id="inputBath" placeholder="পণ্যের পরিমাণ">
+      </div>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <div class="row">
+      <div class="col-sm-5 picker">
+        <input type="number" class="form-control" id="inputsize" placeholder="মোট সংখ্যা">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+  <div class="row">
+
+      <div class="col-sm-7 picker">
+        <input type="text" class="form-control form-control-lg" id="address" placeholder="ঠিকানা (বিকল্প)">
+      </div>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <div class="row">
+      <div class="col-sm-7 picker">
+        <input type="text" class="form-control form-control-lg" id="heading" placeholder="বিজ্ঞাপনের শিরোনাম">
+      </div>
+    </div>
+  </div>
+
+
+    <div class="form-group">
+      <div class="row">
+      <div class="col-sm-7 picker">
+        <textarea class="form-control form-control-lg" rows="3" id="comment" placeholder="বিবরণ"></textarea>>
+      </div>
+    </div>
+  </div>
+<p class="font-1">মূল্যঃ </p>
+<form>
+<div class="row">
+<div class="col-3">
+  <input type="text" class="form-control-sm" placeholder="মূল্য">
+</div>
+<div class="col-3">
+  <input type="text" class="form-control-sm" placeholder="সর্বমোট মূল্য">
+</div>
+<div class="col-3 form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1"><p class="font-1">আলোচনা সাপেক্ষে </p></label>
+</div>
+</div>
+</form>
+<br>
+<br>
+<p class="font-4">আপনার সম্বন্ধেঃ </p>
+<hr/>
+<p style="color: #1da4b6" class="font-1">নামঃ</p>
+<p  class="font-1">নাম</p>
+<div class="row mt-4 mb-4">
+  <div class="col-sm-3">
+    <div class="border p-1">
+      <p  style="color: #1da4b6" class="font-1">ফোন নাম্বার</p>
+      <button class="btn m-3 my-sm-0 btn-info" type="submit"><p class="font-1" style="color: #fff"> ফোন নাম্বার যোগ করুন </p></button>
+      <div class=" form-check form-check  ml-3 mt-1">
+        <input class="form-check-input" type="checkbox" id="Checkbox1" value="option2">
+        <label class="form-check-label" for="Checkbox1"><p class="font-1">ফোন নাম্বার লুকিয়ে রাখুন </p></label>
+      </div>
+    </div>
+  </div>
+</div>
+<p style="color: #1da4b6" class="font-1">ইমেইলঃ</p>
+<p class="font-1">abcd@gmail.com</p>
+<br>
+<button class="btn my-sm-12 btn-lg btn-success" type="submit"> <p class="font-1" style="color: #fff"> বিজ্ঞাপন প্রচার করুন </p></button>
+<br>
+<br>
+</div>
+<br>
+<br>
+<div class="container bg-white">
+  <p class="font-3 ml-5 pt-5 ">জরুরি নিয়ম </p>
+  <p class="font-4">HappyBuyers.com- এ পোস্ট হওয়া সকল বিজ্ঞাপন অবশ্যই আমাদের
+  নিয়মাবলী অনুযায়ী হতে হবেঃ</p>
+  <div class="row">
+    <div class="col-sm-5 offset-1">
+      <ul>
+        <li class="font-6"> অবশ্যই বিজ্ঞাপনটি সঠিক শ্রেণী দিয়েছেন কিনা খেয়াল করুন। </li>
+        <li class="font-6"> অনুগ্রহ করে একই বিজ্ঞাপন ৭ দিনের মধ্যে পুনরায় অথবা একাধিকবার পোস্ট করবেন না।</li>
+        <li class="font-6"> জলছাপযুক্ত ছবি আপলোড করবেন না।</li>
+      </ul>
+    </div>
+    <div class="col-sm-5 offset-1">
+      <ul>
+        <li  class="font-6"> প্যাকেট ডিল ছাড়া একই বিজ্ঞাপনে একের বেশি পণ্যের বিবরণ দিবেন না।</li>
+        <li class="font-6"> আপনার ইমেইল অ্যাড্রেস বা ফোন নাম্বার বিজ্ঞাপনের শিরোনাম বা বিবরণে ব্যবহার করবেন না।</li>
+      </ul>
+    <a href="#">  <p class="font-8">বিজ্ঞাপন দেয়ার সকল নিয়মাবলী দেখতে এখানে ক্লিক করুন > </p> </a>
+    </div>
+  </div>
+</div>
+<br><br>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+ document.getElementById("myDropdown").classList.toggle("show");
+}
+
+ function filterFunction() {
+   var input, filter, ul, li, a, i;
+   input = document.getElementById("myInput");
+   filter = input.value.toUpperCase();
+   div = document.getElementById("myDropdown");
+   a = div.getElementsByTagName("a");
+   for (i = 0; i < a.length; i++) {
+   txtValue = a[i].textContent || a[i].innerText;
+   if (txtValue.toUpperCase().indexOf(filter) > -1) {
+     a[i].style.display = "";
+   } else {
+     a[i].style.display = "none";
+   }
+   }
+ }
+ </script>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction2() {
+   document.getElementById("myDropdown2").classList.toggle("show");
+  }
+
+   function filterFunction2() {
+     var input, filter, ul, li, a, i;
+     input = document.getElementById("myInput2");
+     filter = input.value.toUpperCase();
+     div = document.getElementById("myDropdown2");
+     a = div.getElementsByTagName("a");
+     for (i = 0; i < a.length; i++) {
+     txtValue = a[i].textContent || a[i].innerText;
+     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+       a[i].style.display = "";
+     } else {
+       a[i].style.display = "none";
+     }
+     }
+   }
+   </script>
+  </body>
+</html>

@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icofont/icofont/icofont.min.css">
+    <title>post_ad_location_selection</title>
+  </head>
+  <body  class="bgAd">
+
+<!------------Navbar--------------->
+ <nav class="navbar navbar-expand-lg navbar-light">
+ <div class="container">
+  <a class="navbar-brand" href="index.html"><img src="img/logo.png"><span class="logoText">HappyBuyers.com</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn"> সকল বিজ্ঞাপন </button>
+		  <div id="myDropdown" class="dropdown-content">
+			<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+			<a href="#about">About</a>
+			<a href="#base">Base</a>
+			<a href="#blog">Blog</a>
+			<a href="#contact">Contact</a>
+			<a href="#custom">Custom</a>
+			<a href="#support">Support</a>
+			<a href="#tools">Tools</a>
+		  </div>
+	</div>
+
+
+    </ul>
+    <ul class="navbar-nav ml-auto">
+    	<li class="nav-item mr-5">
+        	<a class="nav-link" href="#"><i class="fas fa-comment-alt text-white navIcon"></i><span class="text-white"> চ্যাট </span></a>
+      	</li>
+      	<li class="nav-item mr-5">
+          <div class="dropdown">
+          <button onclick="myFunction2()" class="dropbtn"> আমার অ্যাকাউন্ট  </button>
+          <div id="myDropdown2" class="dropdown-content">
+          <a href="#myaccount">আমার অ্যাকাউন্ট</a>
+          <a href="#myMembership">আমার সদস্যতা</a>
+          <a href="#myFavourite">আমার পছন্দ</a>
+          <a href="#mySettings">সেটিংস</a>
+          <a href="#finalLogout">লগআউট</a>
+
+          </div>
+      </div>
+      	</li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a href="post_ad.html" class="btn my-2 my-sm-0 btn-info"  role="button"> আপনার বিজ্ঞাপন
+           দিন  </a>
+    </form>
+  </div>
+  </div>
+</nav>
+<!------/Navbar---->
+
+<section>
+
+<div class="container bg-white mt-5 pb-2">
+
+
+<p class="font-3 pt-5 pl-5">আপনার জমি বা সম্পত্তির অবস্থান কোথায়?</p>
+<hr/>
+
+<div class="row m-5">
+  <div class="col-sm-7">
+    <div class="row">
+      <div class="col-sm-9">
+        <p class="font-1"><i class="far fa-check-circle"></i> শ্রেনিঃ গ্রোশারিজ - ব্যক্তিগত </p>
+      </div>
+      <div class="col-sm-3">
+      <p>  <a href="#" style="color: #50cedf"> পরিবর্তন </a></p>
+      </div>
+    </div>
+    <hr/>
+  </div>
+</div>
+
+<div class="row  m-5">
+  <div class="col-4">
+    <p class="font-5">শহর অথবা বিভাগ নির্বাচন নির্বাচন করুনঃ</p>
+
+    <div class="nav flex-column nav-pills colorChanger" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <a class="nav-link active"  data-toggle="pill" id="v-pills-dhaka-tab"  href="#v-pills-dhaka"  role="tab" aria-controls="v-pills-dhaka" aria-selected="true"> ঢাকা <i class="fas fa-chevron-right  fa-lg"></i></a>
+    <a class="nav-link"  data-toggle="pill" id="v-pills-ctg-tab" href="#v-pills-ctg"  role="tab" aria-controls="v-pills-ctg" aria-selected="false"> চট্রগ্রাম <i class="fas fa-chevron-right  fa-lg"></i></a>
+    <a class="nav-link"  data-toggle="pill" id="v-pills-raj-tab" href="#v-pills-raj" role="tab" aria-controls="v-pills-home" aria-selected="false"> রাজশাহী <i class="fas fa-chevron-right  fa-lg"></i></a>
+    <a class="nav-link"  data-toggle="pill" id="v-pills-syl-tab" href="#v-pills-syl" role="tab" aria-controls="v-pills-home" aria-selected="false"> সিলেট <i class="fas fa-chevron-right  fa-lg"></i></a>
+    <a class="nav-link"  data-toggle="pill" id="v-pills-khu-tab" href="#v-pills-khu" role="tab" aria-controls="v-pills-home" aria-selected="false"> খুলনা <i class="fas fa-chevron-right  fa-lg"></i></a>
+    <a class="nav-link"  data-toggle="pill" id="v-pills-rang-tab" href="#v-pills-rang" role="tab" aria-controls="v-pills-home" aria-selected="false"> রংপুর <i class="fas fa-chevron-right  fa-lg"></i></a>
+    <a class="nav-link"  data-toggle="pill" id="v-pills-mym-tab" href="#v-pills-mym" role="tab" aria-controls="v-pills-home" aria-selected="false"> ময়মনসিংহ <i class="fas fa-chevron-right  fa-lg"></i></a>
+    </div>
+  </div>
+<div class="col-4">
+
+    <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-dhaka" role="tabpanel" aria-labelledby="v-pills-dhaka-tab">
+      <p class="font-5">ঢাকার মধ্যে এলাকা নির্বাচন করুনঃ</p>
+        <div class="nav flex-column colorChanger" id="v-pills-tab" aria-orientation="vertical">
+          <a  class="nav-link"  data-toggle="pill" href="#"> মিরপুর <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> উত্তরা  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> ধানমন্ডি  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> বাড্ডা  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#"> গুলশান  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#"> মহাখালি  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#"> রামপুরা  <i class="fas fa-chevron-right  fa-lg"></i></a>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-ctg" role="tabpanel" aria-labelledby="v-pills-ctg-tab">
+      <p class="font-5">চট্টগ্রামের মধ্যে এলাকা নির্বাচন করুনঃ</p>
+        <div class="nav flex-column colorChanger" id="v-pills-tab" aria-orientation="vertical">
+          <a  class="nav-link"  data-toggle="pill" href="#"> হাটহাজারি  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> রেন্ডম   <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#">  রেন্ডম <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> রেন্ডম ২ <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#">রেন্ডম ৩  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#"> রেন্ডম ৪  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#"> রেন্ডম ৫  <i class="fas fa-chevron-right  fa-lg"></i></a>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-raj" role="tabpanel" aria-labelledby="v-pills-raj-tab">
+      <p class="font-5">রাজশাহীর মধ্যে এলাকা নির্বাচন করুনঃ</p>
+        <div class="nav flex-column colorChanger" id="v-pills-tab" aria-orientation="vertical">
+          <a  class="nav-link"  data-toggle="pill" href="#"> raj হাটহাজারি  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> রেন্ডম raj    <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#">  রেন্ডম ats  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> রেন্ডম ২r s <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#">রেন্ডম ৩  sf <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#"> রেন্ডম ৪  d <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#"> রেন্ডম ৫  a <i class="fas fa-chevron-right  fa-lg"></i></a>
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-syl" role="tabpanel" aria-labelledby="v-pills-syl-tab">
+      <p class="font-5">সিলেটের মধ্যে এলাকা নির্বাচন করুনঃ</p>
+        <div class="nav flex-column colorChanger" id="v-pills-tab" aria-orientation="vertical">
+          <a  class="nav-link"  data-toggle="pill" href="#"> আম্বরখানা <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> টিলাগড়   <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#">  খাদিম  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> সুনামগঞ্জ <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#">হবিগঞ্জ <i class="fas fa-chevron-right  fa-lg"></i></a>
+
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-khu" role="tabpanel" aria-labelledby="v-pills-khu-tab">
+      <p class="font-5">খুলনা মধ্যে এলাকা নির্বাচন করুনঃ</p>
+        <div class="nav flex-column colorChanger" id="v-pills-tab" aria-orientation="vertical">
+          <a  class="nav-link"  data-toggle="pill" href="#"> সাতক্ষীরা <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> বাগেরহাট  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#">  রূপসা  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> যশোর <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#"> পাবনা <i class="fas fa-chevron-right  fa-lg"></i></a>
+
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-rang" role="tabpanel" aria-labelledby="v-pills-rang-tab">
+      <p class="font-5">রংপুরের মধ্যে এলাকা নির্বাচন করুনঃ</p>
+        <div class="nav flex-column colorChanger" id="v-pills-tab" aria-orientation="vertical">
+          <a  class="nav-link"  data-toggle="pill" href="#"> পঞ্চগড় <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> নাটোর   <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#">  সিরাজগঞ্জ  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> বগুরা <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill"  href="#">কুড়িগ্রাম <i class="fas fa-chevron-right  fa-lg"></i></a>
+
+        </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-mym" role="tabpanel" aria-labelledby="v-pills-mym-tab">
+      <p class="font-5">ময়মনসিংহ মধ্যে এলাকা নির্বাচন করুনঃ</p>
+        <div class="nav flex-column colorChanger" id="v-pills-tab" aria-orientation="vertical">
+          <a  class="nav-link"  data-toggle="pill" href="#"> নেত্রকোনা <i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#"> জামালপুর<i class="fas fa-chevron-right  fa-lg"></i></a>
+          <a  class="nav-link"  data-toggle="pill" href="#">  কিশোরগঞ্জ <i class="fas fa-chevron-right  fa-lg"></i></a>
+
+
+        </div>
+        </div>
+
+
+    </div>
+    <br>
+    <select class="form-control" id="specificLocation">
+      <option value="" selected disabled>অন্যান্য এলাকা (A-Z)</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+
+    </div>
+<div class="col-sm-4"></div>
+</div>
+<br>
+<div class="row mt-n5 m-5">
+  <div class="col-4">
+        <p class="colorChanger">বিভাগ নির্বাচন করুনঃ</p>
+          <div class="nav flex-column colorChanger" id="v-pills-tab" aria-orientation="vertical">
+            <a  class="nav-link"  data-toggle="pill" href="#"> ঢাকা বিভাগ  <i class="fas fa-chevron-right  fa-lg"></i></a>
+            <a  class="nav-link"  data-toggle="pill" href="#"> চট্রগ্রাম বিভাগ  <i class="fas fa-chevron-right  fa-lg"></i></a>
+            <a  class="nav-link"  data-toggle="pill" href="#"> রাজশাহী বিভাগ  <i class="fas fa-chevron-right  fa-lg"></i></a>
+            <a  class="nav-link"  data-toggle="pill" href="#"> সিলেট বিভাগ  <i class="fas fa-chevron-right  fa-lg"></i></a>
+            <a  class="nav-link"  data-toggle="pill"  href="#"> খুলনা বিভাগ  <i class="fas fa-chevron-right  fa-lg"></i></a>
+            <a  class="nav-link"  data-toggle="pill"  href="#"> রংপুর বিভাগ  <i class="fas fa-chevron-right  fa-lg"></i></a>
+            <a  class="nav-link"  data-toggle="pill"  href="#"> ময়মনসিংহ বিভাগ  <i class="fas fa-chevron-right  fa-lg"></i></a>
+          </div>
+      </div>
+      <div class="col-sm-8"></div>
+</div>
+
+<a href="post_ad_details.html" class="btn my-2 my-sm-0 m-5 btn-success"  role="button"> পরবর্তী ধাপ </a>
+<br/>
+<br/>
+</div>
+</section>
+<br>
+<br>
+<div class="container bg-white">
+  <p class="font-3 ml-5 pt-5 ">জরুরি নিয়ম </p>
+  <p class="font-4">HappyBuyers.com- এ পোস্ট হওয়া সকল বিজ্ঞাপন অবশ্যই আমাদের
+  নিয়মাবলী অনুযায়ী হতে হবেঃ</p>
+  <div class="row">
+    <div class="col-sm-5 offset-1">
+      <ul>
+        <li class="font-6"> অবশ্যই বিজ্ঞাপনটি সঠিক শ্রেণী দিয়েছেন কিনা খেয়াল করুন। </li>
+        <li class="font-6"> অনুগ্রহ করে একই বিজ্ঞাপন ৭ দিনের মধ্যে পুনরায় অথবা একাধিকবার পোস্ট করবেন না।</li>
+        <li class="font-6"> জলছাপযুক্ত ছবি আপলোড করবেন না।</li>
+      </ul>
+    </div>
+    <div class="col-sm-5 offset-1">
+      <ul>
+        <li  class="font-6"> প্যাকেট ডিল ছাড়া একই বিজ্ঞাপনে একের বেশি পণ্যের বিবরণ দিবেন না।</li>
+        <li class="font-6"> আপনার ইমেইল অ্যাড্রেস বা ফোন নাম্বার বিজ্ঞাপনের শিরোনাম বা বিবরণে ব্যবহার করবেন না।</li>
+      </ul>
+    <a href="#">  <p class="font-8">বিজ্ঞাপন দেয়ার সকল নিয়মাবলী দেখতে এখানে ক্লিক করুন > </p> </a>
+    </div>
+  </div>
+</div>
+<br><br>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+ document.getElementById("myDropdown").classList.toggle("show");
+}
+
+ function filterFunction() {
+   var input, filter, ul, li, a, i;
+   input = document.getElementById("myInput");
+   filter = input.value.toUpperCase();
+   div = document.getElementById("myDropdown");
+   a = div.getElementsByTagName("a");
+   for (i = 0; i < a.length; i++) {
+   txtValue = a[i].textContent || a[i].innerText;
+   if (txtValue.toUpperCase().indexOf(filter) > -1) {
+     a[i].style.display = "";
+   } else {
+     a[i].style.display = "none";
+   }
+   }
+ }
+ </script>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction2() {
+   document.getElementById("myDropdown2").classList.toggle("show");
+  }
+
+   function filterFunction2() {
+     var input, filter, ul, li, a, i;
+     input = document.getElementById("myInput2");
+     filter = input.value.toUpperCase();
+     div = document.getElementById("myDropdown2");
+     a = div.getElementsByTagName("a");
+     for (i = 0; i < a.length; i++) {
+     txtValue = a[i].textContent || a[i].innerText;
+     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+       a[i].style.display = "";
+     } else {
+       a[i].style.display = "none";
+     }
+     }
+   }
+   </script>
+  </body>
+</html>

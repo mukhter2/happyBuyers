@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/icofont/icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>search page</title>
+  </head>
+  <body class="bgAd">
+
+<!------------Navbar--------------->
+ <nav class="navbar navbar-expand-lg navbar-light">
+ <div class="container">
+  <a class="navbar-brand" href="index.html"><img src="img/logo.png"><span class="logoText">HappyBuyers.com</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn"> সকল বিজ্ঞাপন </button>
+		  <div id="myDropdown" class="dropdown-content">
+			<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+			<a href="#about">About</a>
+			<a href="#base">Base</a>
+			<a href="#blog">Blog</a>
+			<a href="#contact">Contact</a>
+			<a href="#custom">Custom</a>
+			<a href="#support">Support</a>
+			<a href="#tools">Tools</a>
+		  </div>
+	</div>
+
+
+    </ul>
+    <ul class="navbar-nav ml-auto">
+    	<li class="nav-item mr-5">
+        	<a class="nav-link" href="#"><i class="fas fa-comment-alt text-white navIcon"></i><span class="text-white"> চ্যাট </span></a>
+      	</li>
+      	<li class="nav-item mr-5">
+        	<a class="nav-link" href="login.html"><i class="fas fa-arrow-right text-white navIcon"></i><span class="text-white"> লগ ইন </span></a>
+      	</li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a href="post_ad.html" class="btn my-2 my-sm-0 btn-info"  role="button"> আপনার বিজ্ঞাপন
+           দিন  </a>    </form>
+  </div>
+  </div>
+</nav>
+<!------/Navbar---->
+
+
+ <section class="container my-2">
+ 		<div class="bannerHeader">
+				<div class="py-5">
+					<p class="lead">Banner Ad</p>
+				</div>
+ 			</div>
+	</div>
+ </section>
+<section class="container bg-white">
+   <div class="row">
+     <a href="#" class="btn btn-lg btn-success col-sm-3 m-3"><i class="fas fa-map-marker-alt text-white"></i> অবস্থান নির্বাচন করুন</a>
+     <a href="#" class="btn btn-lg btn-success col-sm-3  m-3"> <i class="fas fa-tags text-white"></i> শ্রেণী নির্বাচন করুন</a>
+     <input type="text"   class="col-sm-2  m-3" placeholder="আপনি কি খুঁজছেন ?">
+     <a href="#" class="btn btn-lg col-sm-2 btn-success  m-3"><i class="fas fa-search text-white"></i>অনুসন্ধান</a>
+
+   </div>
+ </section>
+ <section class="container mt-3">
+   <div class="row">
+      <div class="col-sm-3 border-right bg-white pb-5">
+        <!-- 1st part -->
+        <div class="px-3 mt-3">
+          <p class="font-10">শ্রেণী <i class="fas fa-angle-up float-right mt-1"></i></p>
+          <hr/>
+        </div>
+        <div class="px-3">
+          <p class="font-11">সকল শ্রেনিঃ</p>
+        </div>
+        <div class="px-5">
+          <p><a href="#" class="font-12">গ্রোসারিজ</a></p>
+          <p><a href="#" class="font-12">আসবাবপত্র</a></p>
+          <p><a href="#" class="font-12">ইলেকট্রনিক সামগ্রী</a></p>
+          <p><a href="#" class="font-12">বাড়ী ও জমি</a></p>
+        </div>
+        <!-- 1st part Done -->
+        <!-- 2st part -->
+        <div class="px-3 mt-3">
+          <p class="font-10">অবস্থান <i class="fas fa-angle-up float-right mt-1"></i></p>
+          <hr/>
+        </div>
+        <div class="px-3">
+          <p class="font-11">বাংলাদেশের সবগুলো</p>
+        </div>
+        <div class="px-5">
+          <p><a href="#" class="font-12">ঢাকা বিভাগ</a></p>
+          <p><a href="#" class="font-12">ঢাকা</a></p>
+          <p><a href="#" class="font-12">রাজশাহী বিভাগ</a></p>
+          <p><a href="#" class="font-12">রাজশাহী</a></p>
+          <p><a href="#" class="font-12">চট্টগ্রাম বিভাগ</a></p>
+          <p><a href="#" class="font-12">চট্টগ্রাম</a></p>
+          <p><a href="#" class="font-12">খুলনা বিভাগ</a></p>
+          <p><a href="#" class="font-12">খুলনা</a></p>
+          <p><a href="#" class="font-12">বরিশাল বিভাগ</a></p>
+          <p><a href="#" class="font-12">বরিশাল</a></p>
+          <p><a href="#" class="font-12">ময়মনসিংহ বিভাগ</a></p>
+          <p><a href="#" class="font-12">ময়মনসিংহ</a></p>
+        </div>
+        <!-- 2st part Done -->
+        <!-- 3rd part here -->
+        <div class="px-3 mt-3">
+          <p class="font-10">পণ্যের পরিমাপ
+            <select name="calculationType">
+  	           <option value="" disabled selected>একক</option>
+               <option value="volvo">কেজি</option>
+               <option value="saab">গ্রাম</option>
+               <option value="fiat">লিটার</option>
+               <option value="audi">কাঠা</option>
+               <option value="audi2">বিঘা</option>
+               <option value="audi3">শতাংশ</option>
+               <option value="audi4">একর</option>
+               <option value="audi5">সংখ্যাা</option>
+  </select>
+             <i class="fas fa-angle-up float-right mt-1"></i>
+
+           </p>
+          <hr/>
+        </div>
+        <div class="px-4">
+          <input type="text" maxlength="8" size="5" class="float-left" placeholder="সর্বনিম্ন">
+          <span class="mx-4">-</span>
+          <input type="text" maxlength="8" size="5" class="float-right" placeholder="সর্বোচ্চ">
+          <button type="button" class="mx-5 my-2">ফিল্টার করুন </button>
+        </div>
+        <!-- 3rd part done -->
+
+        <!-- 4th part -->
+        <div class="px-3 mt-3">
+          <p class="font-10">পণ্যের ধরণ <i class="fas fa-angle-up float-right mt-1"></i></p>
+          <hr/>
+        </div>
+        <div class="px-4">
+          <ul class="b">
+          <li><a href="#" class="font-12">ব্যক্তিগত</a></li>
+          <li><a href="#" class="font-12">ব্যবহৃত</a></li>
+          <li><a href="#" class="font-12">ব্যবসায়িক</a></li>
+          <li><a href="#" class="font-12">অব্যবহৃত</a></li>
+        </ul>
+        </div>
+        <!-- 4th part Done -->
+        <!-- 5th part -->
+        <div class="px-3 mt-3">
+          <p class="font-10">বিজ্ঞাপনের ধরণ <i class="fas fa-angle-up float-right mt-1"></i></p>
+          <hr/>
+        </div>
+        <div class="px-4">
+          <ul class="b">
+          <li><a href="#" class="font-12">বিক্রয়ের জন্য</a></li>
+          <li><a href="#" class="font-12">আবশ্যক-ক্রয়ের জন্য</a></li>
+          <li><a href="#" class="font-12">ভাড়ার জন্য</a></li>
+        </ul>
+        </div>
+        <!-- 5th part Done -->
+        <!-- 6rd part here -->
+        <div class="px-3 mt-3">
+          <p class="font-10">মুল্যে (৳)<i class="fas fa-angle-up float-right mt-1"></i>
+</p>
+          <hr/>
+        </div>
+        <div class="px-4">
+          <input type="text" maxlength="8" size="5" class="float-left" placeholder="সর্বনিম্ন">
+          <span class="mx-4">-</span>
+          <input type="text" maxlength="8" size="5" class="float-right" placeholder="সর্বোচ্চ">
+          <button type="button" class="mx-5 my-2">ফিল্টার করুন </button>
+        </div>
+        <!-- 6rd part done -->
+      </div>
+      <div class="col-sm-9 bg-white">
+        <img src="img/adSample.png"/>
+      </div>
+   </div>
+ </section>
+ <section class="container">
+
+
+ 			<div class="text-center cmy-5">
+ 				<p class="lead">বিক্রয় করার মত পণ্য কি আপনার আছে?<br>
+আপনার বিজ্ঞাপন পোষ্ট করুন</p>
+<a href="post_ad_catagory_selection.html" class="btn my-2 my-sm-0 btn-info"  role="button"> আপনার বিজ্ঞাপন
+     দিন  </a>
+ 			</div>
+ 		</div>
+ 	</div>
+  <br><br>
+ </section>
+
+ <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+	function filterFunction() {
+	  var input, filter, ul, li, a, i;
+	  input = document.getElementById("myInput");
+	  filter = input.value.toUpperCase();
+	  div = document.getElementById("myDropdown");
+	  a = div.getElementsByTagName("a");
+	  for (i = 0; i < a.length; i++) {
+		txtValue = a[i].textContent || a[i].innerText;
+		if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		  a[i].style.display = "";
+		} else {
+		  a[i].style.display = "none";
+		}
+	  }
+	}
+	</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

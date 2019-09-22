@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icofont/icofont/icofont.min.css">
+    <title>post_ad</title>
+  </head>
+  <body  class="bgAd">
+
+<!------------Navbar--------------->
+ <nav class="navbar navbar-expand-lg navbar-light">
+ <div class="container">
+  <a class="navbar-brand" href="index.html"><img src="img/logo.png"><span class="logoText">HappyBuyers.com</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn"> সকল বিজ্ঞাপন </button>
+		  <div id="myDropdown" class="dropdown-content">
+			<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+			<a href="#about">About</a>
+			<a href="#base">Base</a>
+			<a href="#blog">Blog</a>
+			<a href="#contact">Contact</a>
+			<a href="#custom">Custom</a>
+			<a href="#support">Support</a>
+			<a href="#tools">Tools</a>
+		  </div>
+	</div>
+
+
+    </ul>
+    <ul class="navbar-nav ml-auto">
+    	<li class="nav-item mr-5">
+        	<a class="nav-link" href="#"><i class="fas fa-comment-alt text-white navIcon"></i><span class="text-white"> চ্যাট </span></a>
+      	</li>
+      	<li class="nav-item mr-5">
+          <div class="dropdown">
+          <button onclick="myFunction2()" class="dropbtn"> আমার অ্যাকাউন্ট  </button>
+          <div id="myDropdown2" class="dropdown-content">
+          <a href="#myaccount">আমার অ্যাকাউন্ট</a>
+          <a href="#myMembership">আমার সদস্যতা</a>
+          <a href="#myFavourite">আমার পছন্দ</a>
+          <a href="#mySettings">সেটিংস</a>
+          <a href="#finalLogout">লগআউট</a>
+
+          </div>
+      </div>
+
+      	</li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a href="post_ad.html" class="btn my-2 my-sm-0 btn-info"  role="button"> আপনার বিজ্ঞাপন
+  				 দিন  </a></form>
+  </div>
+  </div>
+</nav>
+<!------/Navbar---->
+<section>
+
+<div class="container bg-white mt-5 pb-2">
+  <p class="font-9 text-center">নাম আপনাকে স্বাগতম! চলুন একটি বিজ্ঞাপন প্রচার করি। নিচের যেকোনো একটি অপশন নির্বাচন করে নিনঃ </p>
+
+<div class="row text-center mt-5">
+  <div class="col-4 offset-1 border  p-5">
+    <div class="text-center mt-n6">
+    <img src="img/money.png" class="img-fluid"/>
+  </div>
+    <p class="font-5 text-center" style="font-weight: bold">পণের ধরন নির্বাচন করে নিন</p>
+    <hr/>
+    <div class="nav flex-column colorChanger  pl-3" id="v-pills-tab" aria-orientation="vertical">
+        <a class="nav-link"  data-toggle="pill" href="#v-pills-home"><p>গ্রোসারিজ <i class="fas fa-chevron-right  fa-lg"></i></p></a>
+        <a class="nav-link" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">ইলেক্ট্রনিকস সামগ্রী <i class="fas fa-chevron-right fa-lg"></i></a>
+        <a class="nav-link" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="true">বাড়ি ও জমি <i class="fas fa-chevron-right fa-lg"></i></a>
+        <a class="nav-link"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">আসবাবপত্র <i class="fas fa-chevron-right fa-lg"></i></a>
+    </div>
+  </div>
+<div class="col-4 offset-2 border p-5">
+  <div class="text-center mt-n6">
+  <img src="img/magnify.png" class="img-fluid"/>
+</div>
+      <p class="font-5  text-center" style="font-weight: bold">পণ্যে খোঁজার কারণ</p>
+<hr/>
+        <div class="nav flex-column colorChanger  pl-3" id="v-pills-tab" aria-orientation="vertical">
+            <a class="nav-link"  data-toggle="pill" href="#v-pills-home"><p>বিক্রয়ের জন্য <i class="fas fa-chevron-right  fa-lg"></i></p></a>
+            <a class="nav-link" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">আবশ্যক-ক্রয়ের জন্য <i class="fas fa-chevron-right fa-lg"></i></a>
+            <a class="nav-link" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="true">ভাড়ার জন্য <i class="fas fa-chevron-right fa-lg"></i></a>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+
+</div>
+<br/>
+<a href="post_ad_catagory_selection.html" class="btn my-sm-0 btn-success"  role="button"> পরবর্তী ধাপ </a>
+<br/>
+<br/>
+</div>
+
+</section>
+<br><br>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+ document.getElementById("myDropdown").classList.toggle("show");
+}
+
+ function filterFunction() {
+   var input, filter, ul, li, a, i;
+   input = document.getElementById("myInput");
+   filter = input.value.toUpperCase();
+   div = document.getElementById("myDropdown");
+   a = div.getElementsByTagName("a");
+   for (i = 0; i < a.length; i++) {
+   txtValue = a[i].textContent || a[i].innerText;
+   if (txtValue.toUpperCase().indexOf(filter) > -1) {
+     a[i].style.display = "";
+   } else {
+     a[i].style.display = "none";
+   }
+   }
+ }
+ </script>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction2() {
+   document.getElementById("myDropdown2").classList.toggle("show");
+  }
+
+   function filterFunction2() {
+     var input, filter, ul, li, a, i;
+     input = document.getElementById("myInput2");
+     filter = input.value.toUpperCase();
+     div = document.getElementById("myDropdown2");
+     a = div.getElementsByTagName("a");
+     for (i = 0; i < a.length; i++) {
+     txtValue = a[i].textContent || a[i].innerText;
+     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+       a[i].style.display = "";
+     } else {
+       a[i].style.display = "none";
+     }
+     }
+   }
+   </script>
+  </body>
+</html>
